@@ -1,0 +1,1095 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+
+@font-face {
+	src: url("../fonts/Raleway-Light.ttf");
+	font-family: Raleway-Light;
+	src: url("../fonts/Raleway-Bold.ttf");
+	font-family: Raleway-Bold;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+.clr {
+	clear: both;
+}
+
+img {
+	vertical-align: middle;
+}
+
+
+/*common css part end here*/
+
+/*navbar menu css part start*/
+.header_container {
+	padding-top: 60px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+	color: #744fa0 !important;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: white;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	margin-left: 43px;
+	transition: all linear .5s;
+	-webkit-transition: all linear .5s;
+	-ms-transition: all linear .5s;
+	-moz-transition: all linear .5s;
+	-o-transition: all linear .5s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #744fa0;
+}
+
+.botton a {
+	text-decoration: none;
+	margin-left: 20px;
+	padding: 7px 21px;
+	background: #744fa0;
+	color: #fdfdfe;
+	border-radius: 6%;
+}
+
+.navbar {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+
+.navbar ul li a {
+	position: relative;
+}
+
+
+
+.navbar-light .navbar-nav .nav-link:before{
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: #662ea8;
+    left: 15px;
+    bottom: -10px;
+    opacity: 0;
+        
+}
+.navbar-light .navbar-nav .active > .nav-link:before{
+    opacity:1; 
+}
+.navbar-light .navbar-nav .nav-link:hover:before{
+    opacity: 1;
+}
+
+/*navbar menu part end  here*/
+/*banner header part start here*/
+.full_banner {
+	background: url("../images/banner_full.png") no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+
+.banner_two {
+	background: url("../images/banner2.jpg") no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+
+.banner_three {
+	background: url("../images/banner3.jpg") no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+
+.slick-slide img {
+	display: inline;
+}
+
+.full_banner:before {
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.70);
+	left: 0;
+	top: 0;
+}
+
+.banner_text .hig_one {
+	color: #fff;
+	font-size: 56px;
+	padding-top: 244px;
+	text-align: right;
+}
+
+.banner_text .hig_one .spaner {
+	color: #744fa0;
+	font-size: 56px;
+}
+
+.banner_text h2 {
+	font-size: 32px;
+	color: #ffffff;
+	font-family: Raleway-Bold;
+	font-weight: 400;
+	text-align: right;
+}
+
+.banner_text .prag {
+	color: #f1f1f1;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	text-align: right;
+}
+
+
+.icon {
+	margin-top: 60px;
+	margin-bottom: 130px;
+	width: 40%;
+	float: right;
+	margin-left: 20px;
+}
+
+.border_icon {
+	padding: 1px 20px;
+	background: #f5c982;
+	border-radius: 7px;
+	background: #fff;
+}
+
+.border_icon a i {
+	font-size: 33px;
+	color: black;
+	float: left;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.border_icon a p span {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #353535;
+	text-align: center !important;
+	display: block;
+}
+
+.border_icon a p {
+	font-family: Raleway-Bold;
+	font-weight: 400;
+	font-size: 18px;
+	color: #353535;
+	text-align: center;
+}
+
+.icon:hover .border_icon {
+	background: #744fa0;
+}
+
+.icon:hover .border_icon a i {
+	color: #fff;
+}
+
+.icon:hover .border_icon  span {
+	color: #fff;
+}
+
+.icon:hover .border_icon a p {
+	color: #fff;
+}
+
+/*bannder slick slider start*/
+.slick-dots li {
+	border-radius: 50%;
+	border: 2px solid white;
+	display: block;
+	margin: 10px;
+
+
+}
+
+.slick-dots {
+	bottom: 50px;
+	width: auto;
+	right: 30px;
+	top: 340px;
+}
+
+.slick-dots li.slick-active button::before {
+	top: -2.5px;
+	left: -1.3px;
+	opacity: 1;
+	color: #744fa0;
+	font-size: 25px;
+	text-align: center;
+}
+
+.slick-dots .slick-active {
+	border: 2px solid #744fa0;
+
+}
+
+/*bannder slick slider end*/
+
+
+
+/* banner header css part end here*/
+
+/* about us part start */
+/*
+.about_us{
+	width: 100%;
+	margin-top: 100px;
+	
+}
+*/
+.about_text {
+	width: 75%;
+	margin-top: 53px;
+}
+
+.about_text h1 {
+	width: 100%;
+	font-size: 24px;
+	font-family: Raleway-Bold;
+	font-weight: 400;
+	color: #353535;
+	text-align: center;
+}
+
+.about_text img {
+	height: 20px;
+	margin: 0% 40%;
+	margin-bottom: 20px;
+}
+
+.about_text p {
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400px;
+	line-height: 20px;
+	text-align: center;
+}
+
+.about_images {
+	width: 25%;
+	margin: 50px;
+}
+
+/* about us css part end here*/
+/*our awesome fueatures part start here*/
+.awesome_full_color {
+	width: 100%;
+	background: #f1f1f1;
+	padding-bottom: 50px;
+}
+
+.awesome {
+	width: 100%;
+	padding-top: 60px;
+}
+
+.awesome h1 {
+	width: 100%;
+	font-size: 24px;
+	font-family: Raleway-Bold;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #353535;
+	text-align: center;
+}
+
+.awesome img {
+	height: 20px;
+	margin: 0% 45%;
+	margin-bottom: 60px;
+}
+
+/* our awesome fueatures tittle  css part end here*/
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+	color: #242121;
+	background: none;
+}
+
+.nav-link {
+	display: block;
+
+}
+
+.icon_text{
+	border-bottom: 1px solid black !important;
+	margin-right: 46px;
+	transition: all linear .5s;
+}
+
+
+.icon_text i {
+	font-size: 50px;
+	color: #353535;
+	float: left;
+
+}
+
+.icon_text p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #555555;
+	line-height: 25px;
+	margin-left: 64px;
+
+
+}
+
+.icon_text p span {
+	font-family: Raleway-Bold;
+	font-weight: 400;
+	font-size: 18px;
+	color: #353535;
+	line-height: 25px;
+	display: block;
+}
+
+.icon_text:hover i {
+	color: #744fa0;
+}
+
+.icon_text:hover p {
+	color: #744fa0;
+}
+
+.icon_text:hover p span {
+	color: #744fa0;
+}
+
+.icon_text:hover {
+	border-bottom: 1px solid #744fa0 !important;
+	margin-right: 0;
+	color: #744fa0;
+}
+
+.icon_text .active p {
+	color: #744fa0;
+}
+
+/*our awesome fuestures final part end*/
+.awesom_text h1 {
+	font-family: Raleway-Bold;
+	font-weight: 400;
+	font-size: 18px;
+	text-align: right;
+	color: #353535;
+	line-height: 30px;
+	margin-top: 65px;
+
+}
+
+.awesom_text p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	text-align: right;
+	color: #555555;
+	line-height: 30px;
+	margin-top: 20px;
+
+}
+
+.nav-pills .nav-link.active p {
+	color: #744fa0;
+}
+
+.nav-pills .nav-link.active p span {
+	color:#744fa0;
+}
+
+.nav-pills .nav-link.active i {
+	color:#744fa0;
+}
+
+.nav-pills .nav-link.active .icon_text {
+	border-bottom: 1px solid #744fa0 !important;
+	margin-right: 0;
+
+}
+
+/* our awesome features final  css part end here*/
+
+/*screenshort part start here*/
+.screen {
+	width: 100%;
+	padding-top: 60px;
+}
+
+.screen h1 {
+	width: 100%;
+	font-size: 24px;
+	font-family: Raleway-Bold;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #353535;
+	text-align: center;
+}
+
+.screen img {
+	height: 20px;
+	margin: 0% 45%;
+	margin-bottom: 60px;
+}
+
+.screenshort {
+	width: 100%;
+}
+
+
+/* screenshort slick slider part start here*/
+#screenshort .slick-dots li {
+	border-color: #4b4b4b;
+	display: inline-block;
+
+}
+
+#screenshort .slick-dots {
+	top: 100%;
+	left: 0;
+}
+
+#screenshort .slick-dots li.slick-active button::before {
+	top: -2px;
+}
+
+#screenshort .slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+	opacity: 0;
+}
+
+
+/* screenshort slick slider part end here*/
+
+/*  Screenshort css part end here*/
+
+/*watch vedio css part  start here*/
+.watch_tilte {
+	width: 100%;
+	padding-top: 60px;
+}
+
+.watch_tilte h1 {
+	width: 100%;
+	font-size: 24px;
+	font-family: Raleway-Bold;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #353535;
+	text-align: center;
+}
+
+.watch_tilte img {
+	height: 20px;
+	margin: 0% 45%;
+	margin-bottom: 60px;
+}
+
+/*watch vedio tittle part  end*/
+
+.banner_background {
+	background: url(../images/video-banner.png) no-repeat center;
+	background-size: cover;
+	height: 500px;
+	position: relative;
+}
+
+.overlay_one {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: "";
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.overlay_one i {
+	position: absolute;
+	font-size: 80px;
+	color: white;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: all linear .5s;
+	-webkit-transition: all linear .5s;
+	-moz-transition: all linear .5s;
+	-o-transition: all linear .5s;
+	-ms-transition: all linear .5s;
+}
+.overlay_one i:hover{
+	color: #744fa0;
+}
+/* watch vedio css part end here*/
+
+/*pricing plan part start here*/
+.pricing_title {
+	width: 100%;
+	padding-top: 60px;
+}
+
+.pricing_title h1 {
+	width: 100%;
+	font-size: 24px;
+	font-family: Raleway-Bold;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #353535;
+	text-align: center;
+}
+
+.pricing_title img {
+	height: 20px;
+	margin: 0% 45%;
+	margin-bottom: 60px;
+}
+
+/*pricing plan tittle part end*/
+
+@media (min-width: 992px).col-lg-4.free_plan_main {
+	width: 25%;
+	-webkit-box-flex: 0;
+}
+
+.free_plan h1 {
+	padding: 16px 0px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background: #f1f1f1;
+	font-size: 18px;
+	color: #353535;
+	font-family: Raleway-Bold;
+	font-weight: 400;
+	text-align: center;
+	line-height: 16px;
+	transition: all linear .5s !important;
+	-webkit-transition: all linear .5s !important;
+	-moz-transition: all linear .5s !important;
+	-ms-transition: all linear .5s !important;
+	-o-transition: all linear .5s !important;
+}
+
+.circle {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	border: 3px solid #f1f1f1;
+	margin: 10% 25%;
+	z-index: -22;
+}
+
+.circle p span {
+	font-size: 47px;
+	font-family: Raleway-Bold;
+	font-weight: 400;
+	color: black;
+	text-align: center;
+	top: 0px;
+	margin-left: 20px;
+}
+
+/*
+.circle p {
+	font-size: 18px;
+	color: #353535;
+	font-family: Raleway-Bold;
+	font-weight: 400;
+	margin-top: 0px;
+	margin-left: 20px;
+}
+*/
+
+.hiper {
+	font-size: 15px;
+	color: #555555;
+	font-family: Raleway-Bold;
+	font-weight: 400;
+	text-align: center;
+	margin-top: -25px;
+	left: 20px;
+}
+
+.pra {
+	padding: 50px;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	background: #f1f1f1;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	color: #555555;
+	text-align: center;
+}
+.botton_sin{
+	margin-top: -28px;
+	margin-left: 75px;
+}
+.botton_sin a  {
+	width: 50%;
+	padding: 10px 20px;
+	border-radius: 4px;
+	border: 1px solid black;
+	color: #353535;
+	font-size: 14px;
+	font-family: Raleway-Bold;
+	font-weight: 400;
+	top: 388px;
+	left: 75px;
+	text-decoration: none !important;
+	background: transparent;
+	box-sizing: border-box;
+	text-align: center;
+	transition: all linear .5s !important;
+	-webkit-transition: all linear .5s !important;
+	-moz-transition: all linear .5s !important;
+	-ms-transition: all linear .5s !important;
+	-o-transition: all linear .5s !important;
+}
+
+.free_plan_main:hover .free_plan h1 {
+	background: #744fa0;
+	color: #fff;
+}
+
+.free_plan_main:hover .botton_sin a {
+	background: #744fa0;
+	border: 1px solid #744fa0;
+	color: #fff;
+}
+
+/* pricing  plan final css part end here*/
+
+/*awesome team css part  start here */
+
+.awesome_team_tittle {
+	width: 100%;
+	padding-top: 60px;
+}
+
+.awesome_team_tittle h1 {
+	width: 100%;
+	font-size: 24px;
+	font-family: Raleway-Bold;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #353535;
+	text-align: center;
+}
+
+.awesome_team_tittle img {
+	height: 20px;
+	margin: 0% 45%;
+	margin-bottom: 60px;
+
+}
+
+/*awesome team tittle part end */
+.awesome_team{
+    position: relative;
+    margin:100px 0px ;
+    transition: all linear 0.4s;
+    
+}
+.awesome_team:hover{
+    margin-top: 20px;
+}
+
+.awesome_images{
+
+    transition: all linear .4s;
+    background: #f1f1f1;
+    position:relative;
+    height: 370px;
+    border-radius: 10px;
+    
+}
+.awesome_images img{
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.awesome_images .overlay{
+    position: absolute;
+	content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.48);
+    left: 0;
+    top: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    opacity: 0;
+    transition: all linear .4s;
+   
+}
+
+.awesome_images .overlay ul li  a i{
+    font-size: 24px;
+    color: #353535;
+    background:#f1f1f1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+	line-height: 50px;
+	transition: all linear .5s;
+}
+.awesome_images .overlay ul{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.awesome_images .overlay ul li{
+    display: inline-block;
+}
+
+
+.team_text{
+   position: absolute;
+    width: 100%;
+    border: 1px solid #cccccc;
+    text-align: center;
+    margin-top:-180px;
+    z-index: -1;
+	padding: 0 51px;
+    transition: all linear .5s;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+.team_text h3{
+   	color: #353535;
+	font-size: 18px;
+	font-family: Raleway-Bold;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 30px;
+
+}
+.team_text h4{
+    color: #999;
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.team_text p{
+ 	color: #777;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+.awesome_images:hover .overlay{
+    opacity: 1;
+}
+
+.overlay ul li a i:hover {
+	color: #ffff;
+	background: #744fa0;
+}
+.awesome_team:hover .awesome_images{
+    margin-top:0;
+}
+.awesome_team:hover .team_text{
+    margin-top:0;
+}
+/*awesome team final  css part end here*/
+
+/*user's feeedback  part start  here*/
+.users_Feedback {
+	width: 100%;
+	padding-top: 60px;
+}
+
+.users_Feedback h1 {
+	width: 100%;
+	font-size: 24px;
+	font-family: Raleway-Bold;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #353535;
+	text-align: center;
+}
+
+.users_Feedback img {
+	height: 20px;
+	margin: 0% 45%;
+	margin-bottom: 60px;
+}
+
+/*feedback tittle part  end here  */
+
+.feedback_banner {
+	background: url(../images/feedback-banner.png) no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+
+.feedback_banner .overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.70);
+	left: 0;
+	top: 0;
+}
+.feedback_main{
+    position: relative;
+    background-color: #f1f1f1;
+    margin-top:46px;
+    border-radius: 10px;
+    z-index: 9999;
+}
+.feedback_text{
+    text-align: center;
+}
+.feedback_text p{
+  	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #555555;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	margin: 0px 69px;
+    
+}
+.feedback_text i{
+	text-align: center;
+	color: #744fa0;
+	font-size: 14px;
+}
+.feedback_text h2{
+    font-family: Raleway-Bold;
+	font-weight: 400;
+	color: #353535;
+	text-align: center;
+	font-size: 18px;
+}
+.feedback_text h6{
+ 	color: #353535;
+	text-align: center;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	padding-bottom: 25px;
+ 
+}
+.trang{
+	border-right: 27px solid transparent;
+	border-left: 27px solid transparent;
+	border-top: 27px solid #fff;
+	margin-left: 47%;
+	margin-bottom: 30px;
+	width: 0px;
+	height: 6px;
+	margin-top: -8px;
+    
+}
+.all_img{
+    display: flex;
+}
+.feedback_images{
+    width:100px;
+    height:100px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    margin: 0 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid #744fa0;
+    opacity: .5;
+	
+   
+}
+
+.feedback_images img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+#feedback_head .slick-center .feedback_images{
+    transform: scale(1.5);
+    opacity: 1;
+	border: 3px solid #744fa0;
+	
+}
+
+#feedback_head .slick-dots {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    width: auto;
+    top: 100%;
+    left: 0%;
+  
+    
+}
+
+#feedback_head .slick-dots li{
+    display: inline-block;
+    border: 2px solid white;
+}
+
+.slick-dots li.slick-active button::before{
+    opacity: 1;
+    color:#744fa0;
+    font-size: 25px;
+    text-align: center;
+    line-height: 20px;
+    top: -2px;
+    left: -1.5px;
+}
+.marg{
+	margin-bottom: 50px;
+}
+/* user's feedback final part  end*/
+
+/* Get in touch css part start here*/
+.Get_In_Touch {
+	width: 100%;
+	padding-top: 60px;
+}
+
+.Get_In_Touch h1 {
+	width: 100%;
+	font-size: 24px;
+	font-family: Raleway-Bold;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #353535;
+	text-align: center;
+}
+
+.Get_In_Touch img {
+	height: 20px;
+	margin: 0% 45%;
+	margin-bottom: 60px;
+}
+
+/*Get in touch tittle   part end here*/
+
+.massage .form-control {
+	/*	padding: 100px !important;*/
+	display: block;
+	width: 100%;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 9px;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-primary {
+	margin-left: 470px;
+	background: #744fa0;
+	color: #fefefe;
+	font-size: 18px;
+	font-family: Raleway-Bold;
+	font-weight: 400;
+	border: none;
+}
+
+.btn {
+	margin-top: 30px;
+	margin-bottom: 100px;
+}
+
+.form-control {
+	line-height: 17px;
+}
+
+.btn-primary:hover {
+	background: #744fa0;
+}
+
+/*Get in touch final  part end here*/
+
+/*footer  part start here*/
+.footer_full {
+	background: #353535;
+	position: relative;
+}
+
+.footer_all img {
+	padding-top: 30px;
+	margin-left: 10px;
+}
+
+.footer_all ul a i {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #f1f1f1;
+	color: #353535;
+	font-size: 24px;
+	text-align: center;
+	line-height: 50px;
+	left: 50%;
+	margin-top: 45px;
+	margin-left: 10px;
+	transform: translate(-50%, -50%);
+	transition: all linear .5s;
+	-webkit-transition: all linear .5s;
+	-ms-transition: all linear .5s;
+	-moz-transition: all linear .5s;
+	-o-transition: all linear .5s;
+}
+
+.footer_all ul a i:hover {
+	background: #1da1f2;
+	color: #fff;
+}
+
+.footer_all p {
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #f1f1f1;
+}
+
+.footer_all p span {
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #744fa0;
+}
+
+/*footer  part end here*/
